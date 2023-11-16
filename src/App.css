@@ -1,0 +1,117 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    color: #fff;
+    display: flex;
+    font-family: Helvetica,sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    width: auto; 
+    
+}
+
+.album-cover img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.album-cover  {
+    position: relative;
+}
+
+.album-name {
+    margin-bottom: 1rem;
+}
+
+.album-name a, .album-name a:visited {
+    color: white; 
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+}
+
+.artist-name a, .artist-name a:visited {
+    color: #a0a0a0; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.album-name a:hover, .artist-name a:hover {
+    text-decoration: underline; 
+}
+
+
+/* Media  */
+@media (max-width: 1200px) {
+    .album-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 678px) {
+    .album-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+/* CSS from Chat */
+
+.album-cover {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.album-cover:hover .overlay {
+    opacity: 1;
+}
+
+.overlay img {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    max-width: 50px; 
+    max-height: 50px; 
+}
+
+.overlay img:hover {
+    transform: scale(1.1); 
+}
