@@ -1,7 +1,7 @@
 import "./App.css"
-import heartIcon from './assets/icons/heart.svg';
-import playIcon from './assets/icons/play.svg';
-import dotsIcon from './assets/icons/dots.svg';
+import heartIcon from './assets/icons/heart.svg'
+import playIcon from './assets/icons/play.svg'
+import dotsIcon from './assets/icons/dots.svg'
 
 
 // console.log (data)
