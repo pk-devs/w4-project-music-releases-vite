@@ -1,4 +1,3 @@
-import "./App.css"
 
 // console.log(data.albums.items[0].artists[0].name)
 // console.log (data)

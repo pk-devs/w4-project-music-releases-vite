@@ -1,8 +1,8 @@
 import "./App.css"
-import { Header } from "./Header"
-import { ArtistName } from "./ArtistName"
-import { AlbumName } from "./AlbumName"
-import { CoverImage } from "./CoverImage"
+import { Header } from "./components/Header"
+import { ArtistName } from "./components/ArtistName"
+import { AlbumName } from "./components/AlbumName"
+import { CoverImage } from "./components/CoverImage"
 import data from "./data.json"
 
 export const App = () => {
